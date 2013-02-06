@@ -42,6 +42,10 @@ class ContactForm < MailForm::Base
   def callback_run?
     @_callback_run
   end
+
+  #extend ActiveModel::Callbacks
+
+  #define_model_callbacks :deliver
 end
 
 class AdvancedForm < ContactForm
